@@ -1,0 +1,45 @@
+.page-404 {
+  padding: 80px 0 100px;
+
+  .number-4040 {
+    font-size: 8.5em;
+    font-weight:bold;
+    color: @color-main;
+    line-height: 1.2;
+  }
+
+  p.page {
+    font-weight:bold;
+    font-size: 1.3em;
+  }
+
+  .zero {
+    color: @color-third;
+  }
+
+  .btn-back {
+    text-align: center;
+    a {
+      border: 2px solid @color-main;
+      background-color: @color-main;
+      color: #fff;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: .4em;
+      font-weight: 600;
+      margin-top: 30px;
+      text-decoration: none;
+      &:hover {
+        background: #fff;
+        color: @color-main;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .number-4040 {
+      font-size: 6.5em;
+    }
+  }
+
+}

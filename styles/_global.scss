@@ -1,0 +1,30 @@
+$color-main: #0E6655;
+$color-secondary: #73C6B6;
+$color-third: #067302;
+$main-font: 'Roboto Condensed', sans-serif, Helvetica;
+$secondary-font: 'Oswald', sans-serif, Helvetica;
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Roboto Condensed', sans-serif, Arial, Helvetica;
+}
+
+body {
+  font-family: $main-font;
+  color: #222;
+  font-size: 17px;
+}
+
+a:focus {
+  outline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $secondary-font;
+}
+
+.section-heading {
+  font-size: 3em;
+  color: $color-third;
+  margin-bottom: 30px;
+}
