@@ -1,6 +1,6 @@
-$color-main: #0E6655;
-$color-secondary: #73C6B6;
-$color-third: #067302;
+$color-main: #205a29;
+$color-secondary: #ab5626;
+$color-third: #c2b021;
 $main-font: 'Roboto Condensed', sans-serif, Helvetica;
 $secondary-font: 'Oswald', sans-serif, Helvetica;
 
@@ -13,10 +13,25 @@ body {
   font-family: $main-font;
   color: #222;
   font-size: 17px;
+  line-height: 1.4;
+}
+
+main {
+  min-height: 100vh;
+  @media (max-width: 991px) {
+    padding-top: 66px;
+  }
 }
 
 a:focus {
   outline: 0;
+}
+
+section {
+  padding: 70px 0;
+  @media (max-width: 991px) {
+    padding: 40px 0;
+  }
 }
 
 h1, h2, h3, h4, h5 {
@@ -27,4 +42,37 @@ h1, h2, h3, h4, h5 {
   font-size: 3em;
   color: $color-third;
   margin-bottom: 30px;
+  @media (max-width: 991px) {
+    font-size: 1.8em;
+    line-height: 1.1;
+  }
+}
+
+.section-subheading {
+  font-size: 2em;
+  color: $color-third;
+  margin-bottom: 20px;
+  @media (max-width: 991px) {
+    font-size: 1.5em;
+    line-height: 1.1;
+  }
+}
+
+.button-primary {
+  border: 2px solid $color-secondary;
+  background-color: $color-secondary;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: .4em;
+  font-weight: 400;
+  margin-top: 30px;
+  text-transform: capitalize;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  &:hover {
+    background: #fff;
+    color: $color-secondary;
+    text-decoration: none;
+  }
 }
