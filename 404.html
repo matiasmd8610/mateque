@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mateque</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+      header .navbar {
+        background-color: #fff;
+      }
+      header .logo {
+          width: 200px;
+          height: 65px;
+          display: block;
+          background-image: url('images/logo.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center;
+      }
+      .page-404 {
+        padding: 150px 0 80px;
+        font-family: 'Oswald', sans-serif, Helvetica;
+        min-height: 100vh;
+      }
+      .page-404 .number-4040 {
+        font-size: 12.5em;
+        font-weight: bold;
+        color: #c2b021;
+        line-height: 1.2;
+      }
+      .page-404 p.page {
+        font-weight: bold;
+        font-size: 1.8em;
+      }c2b021
+      .page-404 .btn-back {
+        text-align: center;
+      }
+      .page-404 .btn-back a {
+        border: 2px solid #0A594B;
+        background-color: #0A594B;
+        color: #fff;
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: .4em;
+        font-weight: 400;
+        margin-top: 30px;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+      }
+      .page-404 .btn-back a:hover {
+        background: #fff;
+        color: #0A594B;
+      }
+      @media (max-width: 991px) {
+        header .logo {
+          width: 175px;
+          height: 50px;
+          margin: 0 auto;
+        }
+      }
+      @media (max-width: 767px) {
+        .page-404 .number-4040 {
+          font-size: 6.5em;
+        }
+      }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "Terminal de Combustible Campana",
+    "legalName": "Terminal de Combustibles Campana SA",
+    "url": "https://tccar.com.ar",
+    "logo": "https://tccar.com.ar/images/logo_tcc.png",
+    "foundingDate": "2014-11",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Avenida del Libertador 498, 4to piso",
+        "addressLocality": "Ciudad Autónoma de Buenos Aires",
+        "addressRegion": "Buenos Aires",
+        "postalCode": "1001",
+        "addressCountry": "Argentina"
+      }
+    }
+    </script>
+</head>
+
+<body>
+
+  <header id="header" itemscope itemtype="https://schema.org/WPHeader">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="logo" href="/"><h1 class="sr-only">Terminal de Combustible Campana</h1></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-404 page-404-es" style="display:none;">
+      <div class="container">
+          <div class="text-center w-100">
+            <span class="number-4040 m-0">4<span class="zero">0</span>4</span>
+            <p class="page">Ups! La página que busca no existe<p>
+            <p>Haga clic en el botón de abajo para volver a la página de Inicio.
+            </p>
+            <div class="btn-back">
+              <a href="/">Ir al inicio</a>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="page-404 page-404-en" style="display:none;">
+      <div class="container">
+          <div class="text-center w-100">
+            <span class="number-4040 m-0">404</span>
+            <p class="page">Ups! The page you are looking for doesn't exist.<p>
+            <p>Please click the button below to go back to the homepage.
+            </p>
+            <div class="btn-back">
+              <a href="/en/">Go Home</a>
+            </div>
+          </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="script/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  var current = location.pathname.split("/")[1];
+
+  if (current == "en") {
+    $('.page-404-en').show();
+    $('.logo').css('background-image','url(../images/logo_tcc.png)');
+    $('.logo').attr("href", "/en/");
+  } else {
+    $('.page-404-es').show();
+  }
+  </script>
+</body>
+
+</html>
