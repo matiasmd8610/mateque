@@ -67,29 +67,23 @@
         <div class="row">
 
           <div class="col-lg-8">
-
             <p class="section-subheading mb-4">Estamos a disposición para atender sus consultas</p>
 
-            <form action="process.php" method="POST">
-                <div id="name-group" class="form-group">
+            <form id="contact-form" action="contact.php" method="POST">
+                <div class="form-group">
                     <label for="name">Ingrese su nombre</label>
                     <input type="text" class="form-control" id="name" name="name">
-                    <!-- errors will go here -->
                 </div>
-                <div id="email-group" class="form-group">
+                <div class="form-group">
                     <label for="email">Ingrese su E-mail</label>
                     <input type="text" class="form-control" id="email" name="email" placeholder="nombre@dominio.com">
-                    <!-- errors will go here -->
                 </div>
-                <div id="message-group" class="form-group">
+                <div class="form-group">
                     <label for="message">Escriba su consulta</label>
-                    <textarea class="form-control" name="message" rows="6" cols="80"></textarea>
-                    <!-- errors will go here -->
+                    <textarea class="form-control" id="message" name="message" rows="6" cols="80"></textarea>
                 </div>
-                <button type="submit" class="button-primary">Submit <span class="fa fa-arrow-right"></span></button>
-
+                <button type="submit" class="button-primary">Enviar consulta</button>
             </form>
-
           </div>
 
         </div>
