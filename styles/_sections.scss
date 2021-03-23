@@ -223,6 +223,7 @@
 
   .home-values { padding: 80px 0;}
 
+
   .banner-todos {
       margin-top: 20px;
       background-image: url(../../images/secciones.png);
@@ -237,14 +238,19 @@
   .section-heading {margin-top: 30px;}
 
   .about_banner {margin-top: 40px;}
-
+  .about_pic{
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
 }
-@media (max-width: 480px){
+@media (max-width: 768px){
   .secciones{ font-size: 50px!important;}
-  .about_banner img{ max-width: 100%;}
+  .about_banner img{ max-width: 95%;}
 }
 @media (max-width: 900px){
   .home-values { padding:0!important;}
+}
+
 }
 
 //----------------- PRODUCCION  -----------------/
@@ -252,6 +258,19 @@
 .produccion{
 
   .home-values { padding: 80px 0;}
+
+  .item-values {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    @media (min-width: 992px) {
+      width: calc(100% / 2 - 30px);
+    }
+  }
+
 
   .about_content {
     img {
@@ -270,7 +289,7 @@
     h2.secciones{color: #fff; text-align: center;font-size: 90px;padding-top: 150px;}
 
     .encabezado{padding-bottom: 30px;}
-    p.items{font-size: 14px!important;padding: 0 20px;}
+    p.items{font-size: 15px!important;padding: 0 20px;}
 
     section{display:block;}
 
