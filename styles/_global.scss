@@ -12,12 +12,13 @@ html {
 body {
   font-family: $main-font;
   color: #222;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.4;
 }
 
 main {
   min-height: 100vh;
+  padding-top: 91px;
   @media (max-width: 991px) {
     padding-top: 66px;
   }
@@ -75,4 +76,30 @@ h1, h2, h3, h4, h5 {
     color: $color-secondary;
     text-decoration: none;
   }
+}
+
+button[disabled] {
+  opacity: 0.4;
+}
+
+.banner-todos {
+    background-image: url(../../images/secciones.jpg);
+    height: 370px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      color: #fff;
+      text-align: center;
+      font-size: 82px;
+    }
+
+    @media (max-width: 991px) {
+      height: 200px;
+      h2 {
+        font-size: 45px;
+      }
+    }
 }
